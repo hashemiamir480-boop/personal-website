@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>امیر احمد هاشمی — شبکه و امنیت سایبری</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo"><span class="dot"></span> A.HASHEMI</div>
+    <nav class="links">
+      <a href="#about">درباره من</a>
+      <a href="#skills">مهارت‌ها</a>
+      <a href="#certs">مدارک</a>
+      <a href="#projects">نمونه‌کار</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <a href="#contact" class="nav-cta">شروع همکاری</a>
+    <button class="menu-btn" onclick="document.querySelector('nav.links').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-photo">
+        <img src="profile.jpg" alt="امیر احمد هاشمی"
+             onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'hero-photo-fallback',textContent:'AH'}));">
+      </div>
+      <div class="eyebrow">شبکه &amp; امنیت سایبری</div>
+      <h1>امیر احمد هاشمی<br><span>هاشم</span></h1>
+      <p class="lead">
+        دانش‌آموز پایه دوازدهم رشته کامپیوتر، در حال گذراندن دوره‌های تخصصی شبکه و امنیت سایبری در مجتمع فنی تهران.
+        علاقه‌مند به طراحی، پیاده‌سازی و ایمن‌سازی زیرساخت‌های شبکه.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">مشاهده نمونه‌کار ↓</a>
+        <a href="#resume" class="btn btn-ghost">دانلود رزومه</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">5</div><div class="stat-label">مدرک گذرانده‌شده</div></div>
+        <div><div class="stat-num">5</div><div class="stat-label">مدرک در برنامه</div></div>
+        <div><div class="stat-num">1+</div><div class="stat-label">پروژه واقعی شبکه</div></div>
+      </div>
+    </div>
+    <div class="diagram-box">
+      <svg class="net" viewBox="0 0 400 400">
+        <line class="edge edge-active" x1="200" y1="200" x2="90" y2="100"/>
+        <line class="edge edge-active" x1="200" y1="200" x2="310" y2="100"/>
+        <line class="edge edge-active" x1="200" y1="200" x2="90" y2="300"/>
+        <line class="edge edge-active" x1="200" y1="200" x2="310" y2="300"/>
+        <line class="edge" x1="90" y1="100" x2="60" y2="180"/>
+        <line class="edge" x1="310" y1="100" x2="340" y2="180"/>
+        <line class="edge" x1="90" y1="300" x2="60" y2="220"/>
+        <line class="edge" x1="310" y1="300" x2="340" y2="220"/>
+        <circle class="node-core" cx="200" cy="200" r="34"/>
+        <text class="node-label" x="200" y="204" text-anchor="middle" fill="var(--text)" font-size="11">HASHEM</text>
+
+        <circle class="node pulse" cx="90" cy="100" r="20"/>
+        <text class="node-label" x="90" y="104" text-anchor="middle">NET</text>
+        <circle class="node pulse" cx="310" cy="100" r="20" style="animation-delay:.5s"/>
+        <text class="node-label" x="310" y="104" text-anchor="middle">SEC</text>
+        <circle class="node pulse" cx="90" cy="300" r="20" style="animation-delay:1s"/>
+        <text class="node-label" x="90" y="304" text-anchor="middle">SRV</text>
+        <circle class="node pulse" cx="310" cy="300" r="20" style="animation-delay:1.5s"/>
+        <text class="node-label" x="310" y="304" text-anchor="middle">CERT</text>
+
+        <circle class="node" cx="60" cy="180" r="10"/>
+        <circle class="node" cx="340" cy="180" r="10"/>
+        <circle class="node" cx="60" cy="220" r="10"/>
+        <circle class="node" cx="340" cy="220" r="10"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="sec-eyebrow">درباره من</div>
+      <h2 class="sec-title">از علاقه تا تخصص</h2>
+      <div class="about-text">
+        <p>
+          من <strong>امیر احمد هاشمی</strong> هستم، دانش‌آموز پایه دوازدهم رشته کامپیوتر در هنرستان.
+          فراتر از برنامه درسی مدرسه، به‌صورت جدی وارد حوزه شبکه و امنیت سایبری شده‌ام و
+          دوره‌های تخصصی این حوزه را در <strong>مجتمع فنی تهران</strong> می‌گذرانم.
+        </p>
+        <p>
+          تمرکز اصلی من روی درک عمیق زیرساخت شبکه، مدیریت سرور و اصول امنیت اطلاعات است؛
+          و همین علاقه باعث شده دنبال فرصتی برای کارآموزی در یک شرکت باشم تا آموخته‌هایم را
+          در محیط واقعی به کار بگیرم.
+        </p>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="fact"><span class="fact-label">تحصیلات</span><span class="fact-value">پایه دوازدهم، رشته کامپیوتر</span></div>
+      <div class="fact"><span class="fact-label">دوره‌های تخصصی</span><span class="fact-value">مجتمع فنی تهران</span></div>
+      <div class="fact"><span class="fact-label">حوزه تمرکز</span><span class="fact-value">شبکه و امنیت سایبری</span></div>
+      <div class="fact"><span class="fact-label">هدف فعلی</span><span class="fact-value">کارآموزی در حوزه شبکه/امنیت</span></div>
+      <div class="fact"><span class="fact-label">زبان</span><span class="fact-value">در حال تقویت انگلیسی تخصصی</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">مهارت‌ها</div>
+      <h2 class="sec-title">چیزهایی که بلدم</h2>
+      <p class="sec-desc">ترکیبی از دانش نظری مدرک‌محور و کار عملی روی زیرساخت واقعی.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">◈</div>
+        <h3>شبکه (Networking)</h3>
+        <p>طراحی، پیاده‌سازی و عیب‌یابی شبکه‌های کوچک تا متوسط.</p>
+        <div class="tag-row">
+          <span class="tag">Network+</span>
+          <span class="tag">Windows Networking</span>
+          <span class="tag">TCP/IP</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◆</div>
+        <h3>امنیت سایبری</h3>
+        <p>اصول امنیت اطلاعات، تهدیدشناسی و مفاهیم پایه دفاع سایبری.</p>
+        <div class="tag-row">
+          <span class="tag">Security+</span>
+          <span class="tag">Threat Basics</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">▣</div>
+        <h3>سرور و سیستم‌عامل</h3>
+        <p>مدیریت ویندوز سرور، هویت کاربران و پشتیبانی سیستم‌ها.</p>
+        <div class="tag-row">
+          <span class="tag">MCSA</span>
+          <span class="tag">Windows Server</span>
+          <span class="tag">Identity</span>
+          <span class="tag">A+</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="certs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">مسیر مدارک</div>
+      <h2 class="sec-title">از پایه تا تخصصی</h2>
+      <p class="sec-desc">مدارکی که گذرانده‌ام و مسیری که برای ادامه آن برنامه‌ریزی کرده‌ام.</p>
+    </div>
+    <div class="cert-track">
+      <div class="cert-row">
+        <div class="cert-rail"><div class="cert-dot done"></div></div>
+        <div class="cert-content">
+          <h4>ICDL, A+, Network+, Security+, MCSA</h4>
+          <span class="badge badge-done">گذرانده‌شده</span>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-rail"><div class="cert-dot"></div></div>
+        <div class="cert-content">
+          <h4>CCNA</h4>
+          <span class="badge badge-plan">در برنامه</span>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-rail"><div class="cert-dot"></div></div>
+        <div class="cert-content">
+          <h4>CEH</h4>
+          <span class="badge badge-plan">در برنامه</span>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-rail"><div class="cert-dot"></div></div>
+        <div class="cert-content">
+          <h4>PWK (OSCP)</h4>
+          <span class="badge badge-plan">در برنامه</span>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-rail"><div class="cert-dot"></div></div>
+        <div class="cert-content">
+          <h4>CCNP</h4>
+          <span class="badge badge-plan">در برنامه</span>
+        </div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-rail"><div class="cert-dot"></div></div>
+        <div class="cert-content">
+          <h4>CCIE</h4>
+          <span class="badge badge-plan">در برنامه</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-eyebrow">نمونه‌کار</div>
+      <h2 class="sec-title">پروژه واقعی</h2>
+      <p class="sec-desc">تجربه‌ای عملی که کنار مدارک، دانش نظری را به کار واقعی تبدیل کرده.</p>
+    </div>
+    <div class="project-card">
+      <div class="project-meta">
+        <div><div class="m-label">نوع</div><div class="m-value">راه‌اندازی شبکه</div></div>
+        <div><div class="m-label">حوزه کارفرما</div><div class="m-value">تأسیسات مکانیکی و برقی</div></div>
+        <div><div class="m-label">نقش</div><div class="m-value">مسئول طراحی و اجرا</div></div>
+      </div>
+      <div class="project-body">
+        <h3>طراحی و راه‌اندازی زیرساخت شبکه برای یک کسب‌وکار</h3>
+        <p>
+          مسئولیت طراحی و پیاده‌سازی شبکه داخلی یک کسب‌وکار فعال در حوزه تأسیسات مکانیکی و برقی
+          ساختمانی و صنعتی را بر عهده گرفتم؛ از تحلیل نیاز اولیه تا اجرای عملی زیرساخت.
+        </p>
+        <ul>
+          <li>بررسی نیازهای شبکه‌ای کسب‌وکار و طراحی چیدمان مناسب</li>
+          <li>پیاده‌سازی و پیکربندی بر اساس دانش گرفته‌شده از Network+ و MCSA</li>
+          <li>هماهنگی مستمر با کارفرما برای تطبیق شبکه با رشد کسب‌وکار</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="resume">
+  <div class="wrap">
+    <div class="resume-card">
+      <div>
+        <h3>یک نسخه کامل از رزومه من</h3>
+        <p>خلاصه‌ای فشرده از تحصیلات، مدارک و پروژه‌ها در قالب PDF.</p>
+        <div class="resume-note">&nbsp;</div>
+      </div>
+      <a href="#contact" class="btn btn-primary">دانلود رزومه (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-solo">
+      <div class="sec-eyebrow">تماس</div>
+      <h2 class="sec-title">بیایید صحبت کنیم</h2>
+      <p class="sec-desc" style="margin-bottom:8px;">
+        اگر دنبال یک کارآموز علاقه‌مند به شبکه و امنیت سایبری هستید، خوشحال می‌شوم از شما بشنوم.
+      </p>
+      <div class="contact-list">
+        <div class="contact-item">
+          <div class="c-icon">@</div>
+          <div><div class="c-label">EMAIL</div><div class="c-value">hashemiamir480@gmail.com</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">in</div>
+          <div><div class="c-label">LINKEDIN</div><div class="c-value">‏Amirahmad hashemi‏ &nbsp;</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">TG</div>
+          <div><div class="c-label">TELEGRAM</div><div class="c-value">@BIGHASHEM</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 امیر احمد هاشمی
+</footer>
+
+</body>
+</html>
